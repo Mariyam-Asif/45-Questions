@@ -1,8 +1,3 @@
-//Addition
-console.log(5 + 3);
-//Subtraction
-console.log(10 - 2);
-//Multipilication
-console.log(4 * 2);
-//Division
-console.log(16 / 2);
+var favoriteNumber = "7";
+var message = "My favorite number is ".concat(favoriteNumber, ".");
+console.log(message);
