@@ -1,15 +1,8 @@
 //Addition
-let additionResult: number= 5 + 3;
-console.log("Addition:", additionResult);
-
+console.log(5 + 3);
 //Subtraction
-let subtractionResult: number= 10 - 2;
-console.log("Subtraction:", subtractionResult);
-
+console.log(10 - 2);
 //Multipilication
-let multipilicationResult: number= 4 * 2;
-console.log("Multipilication:", multipilicationResult);
-
+console.log(4 * 2);
 //Division
-let divisionResult: number= 16 / 2;
-console.log("Division:", divisionResult);
+console.log(16 / 2);
