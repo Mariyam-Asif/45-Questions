@@ -1,14 +1,16 @@
-let guestList: string[]= ["Tom Cruise", "Angelina Jolie", "Denzel Washington"];
+let guestList: string[] = ["Tom Cruise", "Angelina Jolie", "Denzel Washington", "Brad Pitt"];
 
-console.log("Great news! We found a bigger dinner table.");
+console.log("Due to unforeseen circumstances, we can only invite two people for dinner.");
 
-guestList.unshift("Barack Obama");
-
-let middleIndex: number = Math.floor(guestList.length / 2);
-guestList.splice(middleIndex, 0, "Ryan Reynold");
-
-guestList.push("Brad Pitt");
-
-for (let i=0; i<guestList.length; i++) {
-    console.log("Dear " + guestList[i] + ", you are invited to dinner. We would be honored to have you join us.");
+while (guestList.length > 2) {
+    let removedGuests: string = guestList.pop()!;
+    console.log(`Sorry, ${removedGuests}, we can't invite you to dinner.`);
 }
+for (let guest of guestList) {
+    console.log(`Dear ${guest}, you're still invited to dinner.`);
+}
+
+guestList.pop();
+guestList.pop();
+
+console.log("Guest List:", guestList);
