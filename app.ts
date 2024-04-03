@@ -1,16 +1,30 @@
-let guestList: string[] = ["Tom Cruise", "Angelina Jolie", "Denzel Washington", "Brad Pitt"];
+let placesToVisit: string[] = ["Seoul", "Paris", "Bangkok", "Dubai", "New York"];
+//Original Order
+console.log("Original order:", placesToVisit);
 
-console.log("Due to unforeseen circumstances, we can only invite two people for dinner.");
+//Alphabetical Order 
+console.log("Alphabetical order:", [...placesToVisit].sort());
 
-while (guestList.length > 2) {
-    let removedGuests: string = guestList.pop()!;
-    console.log(`Sorry, ${removedGuests}, we can't invite you to dinner.`);
-}
-for (let guest of guestList) {
-    console.log(`Dear ${guest}, you're still invited to dinner.`);
-}
+//Array still in original order
+console.log("Original order (again):", placesToVisit);
 
-guestList.pop();
-guestList.pop();
+//Reverse Alphabetical order
+console.log("Reverse alphabetical order:", [...placesToVisit].sort().reverse());
 
-console.log("Guest List:", guestList);
+//Array still in original order
+console.log("Original order (again):", placesToVisit);
+
+//Reversed Order
+placesToVisit.reverse();
+console.log("Reversed order:", placesToVisit);
+
+//Reversed Order again
+placesToVisit.reverse();
+console.log("Back to original order:", placesToVisit);
+
+//Alphabetical Order
+placesToVisit.sort();
+console.log("Sorted in alphabetical order:", placesToVisit);
+
+//Reverse Alphabetical Order
+console.log("Stored in reverse alphabetical order:", placesToVisit.sort().reverse());
