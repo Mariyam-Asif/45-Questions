@@ -1,13 +1,9 @@
 var guestList = ["Tom Cruise", "Angelina Jolie", "Denzel Washington"];
-var notPresent = "Denzel Washington";
-var newGuest = "Cristiano Ronaldo";
-for (var i = 0; i < guestList.length; i++) {
-    if (guestList[i] === notPresent) {
-        (guestList[i] = newGuest);
-        break;
-    }
-}
+console.log("Great news! We found a bigger dinner table.");
+guestList.unshift("Barack Obama");
+var middleIndex = Math.floor(guestList.length / 2);
+guestList.splice(middleIndex, 0, "Ryan Reynold");
+guestList.push("Brad Pitt");
 for (var i = 0; i < guestList.length; i++) {
     console.log("Dear " + guestList[i] + ", you are invited to dinner. We would be honored to have you join us.");
 }
-console.log("Mr. ".concat(notPresent, " can't make it to dinner."));
