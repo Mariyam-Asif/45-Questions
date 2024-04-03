@@ -1,5 +1,4 @@
-var names = ["Saira", "Bashayer", "Sabahat"];
-var message = "Hi, ";
-for (var i = 0; i < names.length; i++) {
-    console.log(message + names[i]);
+var transportation = ["Bugatti Chiron", "Hennessey Venom F5", "Range Rover"];
+for (var i = 0; i < transportation.length; i++) {
+    console.log("I would like to own a " + transportation[i] + ".");
 }
