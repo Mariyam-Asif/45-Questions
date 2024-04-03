@@ -1,4 +1,4 @@
-let famous_person= "Nelson Mandela";
-let quote= "It always seems impossible until its done.";
-let message= `${famous_person} once said, "${quote}"`;
-console.log(message);
+let personName= "\n\t Elon Musk \t\n";
+console.log(personName);
+let stripped= personName.trim();
+console.log(stripped);

@@ -1,4 +1,4 @@
-var famous_person = "Nelson Mandela";
-var quote = "It always seems impossible until its done.";
-var message = "".concat(famous_person, " once said, \"").concat(quote, "\"");
-console.log(message);
+var personName = "\n\t Elon Musk \t\n";
+console.log(personName);
+var stripped = personName.trim();
+console.log(stripped);
