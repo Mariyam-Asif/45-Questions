@@ -1,4 +1,4 @@
-var personName = "John";
-console.log("Lowercase:", personName.toLocaleLowerCase());
-console.log("Uppercase:", personName.toLocaleUpperCase());
-console.log("Titlecase:", personName.replace(/\bw/g, function (c) { return c.toLocaleUpperCase(); }));
+var famous_person = "Nelson Mandela";
+var quote = "It always seems impossible until its done.";
+var message = "".concat(famous_person, " once said, \"").concat(quote, "\"");
+console.log(message);

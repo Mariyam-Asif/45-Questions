@@ -1,4 +1,4 @@
-let personName= "John";
-console.log("Lowercase:", personName.toLocaleLowerCase());
-console.log("Uppercase:", personName.toLocaleUpperCase());
-console.log("Titlecase:", personName.replace(/\bw/g,c => c.toLocaleUpperCase()));
+let famous_person= "Nelson Mandela";
+let quote= "It always seems impossible until its done.";
+let message= `${famous_person} once said, "${quote}"`;
+console.log(message);
