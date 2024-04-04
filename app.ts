@@ -1,31 +1,15 @@
-let alien_colors1 = 'green';
+let age = 15;
 
-if (alien_colors1 === 'green') {
-    console.log("Congratulations! The player just earned 5 points.");
-} else if (alien_colors1 === 'yellow') {
-    console.log("Congratulations! The player just earned 10 points.");
-} else if (alien_colors1 === 'red') {
-    console.log("Congratulations! The player just earned 15 points.");
-}
-
-//Version # 2
-let alien_colors2 = 'yellow';
-
-if (alien_colors2 === 'green') {
-    console.log("Congratulations! The player just earned 5 points.");
-} else if (alien_colors2 === 'yellow') {
-    console.log("Congratulations! The player just earned 10 points.");
-} else if (alien_colors2 === 'red') {
-    console.log("Congratulations! The player just earned 15 points.");
-}
-
-//Version # 3
-let alien_colors3 = 'red'
-
-if (alien_colors3 === 'green') {
-    console.log("Congratulations! The player just earned 5 points.");
-} else if (alien_colors3 === 'yellow') {
-    console.log("Congratulations! The player just earned 10 points.");
-} else if (alien_colors3 === 'red') {
-    console.log("Congratulations! The player just earned 15 points.");
+if (age < 2) {
+    console.log("This person is a baby.");
+} else if (age >= 2 && age < 4) {
+    console.log("This person is a toddler.");
+} else if (age >=4 && age < 13) {
+    console.log("This person is a kid.");
+} else if (age >=13 && age < 20) {
+    console.log("This person is a teenager.");
+} else if (age >=20 && age < 65) {
+    console.log("This person is an adult.");
+} else {
+    console.log("This person is an elder.");
 }
