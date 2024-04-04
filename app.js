@@ -1,6 +1,6 @@
 "use strict";
-let pizzas = ["mexican", "kebab", "bbq"];
-for (let i = 0; i < pizzas.length; i++) {
-    console.log("I like " + pizzas[i] + " pizza.");
+let animals = ["dog", "cat", "rabbit"];
+for (let i = 0; i < animals.length; i++) {
+    console.log("A " + animals[i] + " would make a great pet.");
 }
-console.log("I really love pizza!");
+console.log("Any of these animals would make a great pet!");
