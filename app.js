@@ -1,6 +1,5 @@
 "use strict";
-let animals = ["dog", "cat", "rabbit"];
-for (let i = 0; i < animals.length; i++) {
-    console.log("A " + animals[i] + " would make a great pet.");
+function make_shirt(size, message) {
+    console.log("The size of the shirt is " + size + " and the message printed on it is: " + message);
 }
-console.log("Any of these animals would make a great pet!");
+make_shirt("medium", "Dare to Dream");
