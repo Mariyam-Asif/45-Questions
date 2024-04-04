@@ -1,7 +1,7 @@
 "use strict";
-function describe_city(city, country = "Pakistan") {
-    console.log(city + " is in " + country + ".");
+function city_country(city, country) {
+    return city + ", " + country;
 }
-describe_city("Karachi");
-describe_city("Islamabad");
-describe_city("Seoul", "Korea");
+console.log(city_country("Islamabad", "Pakistan"));
+console.log(city_country("Tokyo", "Japan"));
+console.log(city_country("New York", "USA"));
