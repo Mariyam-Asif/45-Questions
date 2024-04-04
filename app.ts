@@ -1,22 +1,10 @@
-let magicians: string[] = ["David Copperfield", "Penn Jillette", "Teller"];
-
-function make_great(magicians: string[]) {
-    let greatMagicians = [];
-    for (let i = 0; i < magicians.length; i++) {
-        greatMagicians.push("The Great " + magicians[i]);
-    }
-    return greatMagicians;
-}
-
-function show_magicians(magicians: string[]) {
-    for (let i = 0; i < magicians.length; i++) {
-        console.log(magicians[i]);
+function make_Sandwich(...items: string[]) {
+    console.log("Making a sandwich with the following items:");
+    for (let item of items) {
+        console.log("-" + item);
     }
 }
 
-let greatMagiciansArray: string[] = make_great([...magicians]);
-
-console.log("Original Magicians:");
-show_magicians(magicians);
-console.log("\nGreat Magicians:");
-show_magicians(greatMagiciansArray);
+make_Sandwich("bread", "cheese", "chicken", "tomato", "lettuce");
+make_Sandwich("bread", "hummus", "cucumber", "lettuce");
+make_Sandwich("bread", "chocolate spread", "sliced almond");
