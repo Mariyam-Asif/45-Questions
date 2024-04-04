@@ -1,9 +1,11 @@
 let magicians: string[] = ["David Copperfield", "Penn Jillette", "Teller"];
 
 function make_great(magicians: string[]) {
-for (let i = 0; i < magicians.length; i++) {
-    magicians[i] = "The Great " + magicians[i];
-}
+    let greatMagicians = [];
+    for (let i = 0; i < magicians.length; i++) {
+        greatMagicians.push("The Great " + magicians[i]);
+    }
+    return greatMagicians;
 }
 
 function show_magicians(magicians: string[]) {
@@ -12,6 +14,9 @@ function show_magicians(magicians: string[]) {
     }
 }
 
-make_great(magicians);
+let greatMagiciansArray: string[] = make_great([...magicians]);
 
+console.log("Original Magicians:");
 show_magicians(magicians);
+console.log("\nGreat Magicians:");
+show_magicians(greatMagiciansArray);
