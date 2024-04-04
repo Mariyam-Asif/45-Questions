@@ -1,19 +1,13 @@
-let usernames: string[] = ['john', "sarah", "admin", "michael", "emma"];
+let current_users = ['john', 'sarah', 'michael', 'emma', 'kate'];
+let new_users = ['peter', 'sarah', 'adam', 'ryan', 'john'];
 
-if (usernames.length === 0) {
-    console.log("We need to find some users!");
-} else {
-    for (let i = 0; i < usernames.length; i++) {
-        if (usernames[i] === "admin") {
-            console.log("Hello admin, would you like to see a status report?");
-        } else {
-            console.log("Hello " + usernames[i] + ", thank you for logging in again.");
-        }
-        }
+for (let i = 0; i < new_users.length; i++) {
+    let lowercase_current_users = current_users.map(user => user.toLowerCase());
+    let lowercase_new_users = new_users[i].toLowerCase();
+
+    if (lowercase_current_users.includes(lowercase_new_users)) {
+        console.log("Sorry, the username '" + new_users[i] + "' is already taken. Please enter a new username.");
+    } else {
+        console.log("The username '" + new_users[i] + "' is available.");
     }
-
-usernames = [];
-
-if (usernames.length === 0) {
-    console.log("We need to find some users!");
 }
