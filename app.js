@@ -1,17 +1,10 @@
 "use strict";
-let favorite_fruit = ['strawberry', 'blueberry', 'mulberry'];
-if (favorite_fruit.includes('strawberry')) {
-    console.log("You really like strawberries!");
-}
-if (favorite_fruit.includes('apples')) {
-    console.log("You really like apples!");
-}
-if (favorite_fruit.includes('blueberry')) {
-    console.log("You really like blueberries!");
-}
-if (favorite_fruit.includes('mango')) {
-    console.log("You really like mangoes!");
-}
-if (favorite_fruit.includes("mulberry")) {
-    console.log("You really like mulberries!");
+let usernames = ['john', 'michael', 'admin', 'sarah', 'emma'];
+for (let i = 0; i < usernames.length; i++) {
+    if (usernames[i] === 'admin') {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log("Hello " + usernames[i] + ", thank you for logging in again.");
+    }
 }
