@@ -1,31 +1,11 @@
-//Tests for equality and inequality with strings:
-var fruit = 'apple';
-console.log("Is fruit == 'apple'? I predict True.");
-console.log(fruit == 'apple');
-console.log("Is fruit != 'banana'? I predict True.");
-console.log(fruit != 'banana');
-//Tests using the lower case function:
-var word = 'HELLO';
-console.log("Is word.toLowerCase() == 'hello'? I predict True.");
-console.log(word.toLowerCase() == 'hello');
-//Numerical tests:
-var x = 10;
-var y = 20;
-console.log("Is x > y? I predict False.");
-console.log(x > y);
-console.log("Is x <= y? I predict True.");
-console.log(x <= y);
-//Tests using "and" and "or" operators:
-var age = 25;
-var isStudent = true;
-console.log("Is age >= 18 && isStudent true? I predict True.");
-console.log(age >= 18 && isStudent);
-console.log("Is age < 18 || isStudent false? I predict False.");
-console.log(age < 18 || !isStudent);
-//Testing whether an item is in an array:
-var colors = ['green', 'red', 'blue'];
-console.log("Is 'green' is in colors array? I predict True.");
-console.log(colors.includes('green'));
-//Testing whether an item is not in an array:
-console.log("Is 'yellow' is not in colors array? I predict True.");
-console.log(!colors.includes('yellow'));
+"use strict";
+//Version #1
+let alien_color1 = 'green';
+if (alien_color1 === 'green') {
+    console.log("Congratulations! The player just earned 5 points.");
+}
+//Version #2
+let alien_color2 = 'red';
+if (alien_color2 === 'yellow') {
+    console.log("Congratulations! The player just earned 5 points.");
+}
