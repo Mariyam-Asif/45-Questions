@@ -1,31 +1,31 @@
-var car = 'bugatti';
-//Test 1
-console.log("Is car == 'bugatti'? I predict True.");
-console.log(car == 'bugatti');
-//Test 2
-console.log("Is car != 'honda'? I predict True.");
-console.log(car != 'honda');
-//Test 3
-console.log("Is car === 'bugatti'? I predict True.");
-console.log(car === 'bugatti');
-//Test 4
-console.log("Is car < 'toyota'? I predict True.");
-console.log(car < 'toyota');
-//Test 5
-console.log("Is car <= 'bugatti'? I predict True.");
-console.log(car <= 'bugatti');
-//Test 6
-console.log("Is car == 'honda'? I predict False.");
-console.log(car == 'honda');
-//Test 7
-console.log("Is car == 'Bugatti'? I predict False.");
-console.log(car == 'Bugatti');
-//Test 8
-console.log("Is car == undefined? I predict False.");
-console.log(car == undefined);
-//Test 9
-console.log("Is car !== 'bugatti'? I predict False.");
-console.log(car !== 'bugatti');
-//Test 10
-console.log("Is car >= 'ford'? I predict False.");
-console.log(car >= 'ford');
+//Tests for equality and inequality with strings:
+var fruit = 'apple';
+console.log("Is fruit == 'apple'? I predict True.");
+console.log(fruit == 'apple');
+console.log("Is fruit != 'banana'? I predict True.");
+console.log(fruit != 'banana');
+//Tests using the lower case function:
+var word = 'HELLO';
+console.log("Is word.toLowerCase() == 'hello'? I predict True.");
+console.log(word.toLowerCase() == 'hello');
+//Numerical tests:
+var x = 10;
+var y = 20;
+console.log("Is x > y? I predict False.");
+console.log(x > y);
+console.log("Is x <= y? I predict True.");
+console.log(x <= y);
+//Tests using "and" and "or" operators:
+var age = 25;
+var isStudent = true;
+console.log("Is age >= 18 && isStudent true? I predict True.");
+console.log(age >= 18 && isStudent);
+console.log("Is age < 18 || isStudent false? I predict False.");
+console.log(age < 18 || !isStudent);
+//Testing whether an item is in an array:
+var colors = ['green', 'red', 'blue'];
+console.log("Is 'green' is in colors array? I predict True.");
+console.log(colors.includes('green'));
+//Testing whether an item is not in an array:
+console.log("Is 'yellow' is not in colors array? I predict True.");
+console.log(!colors.includes('yellow'));

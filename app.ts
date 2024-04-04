@@ -1,42 +1,41 @@
-let car = 'bugatti';
+//Tests for equality and inequality with strings:
+let fruit = 'apple';
+console.log("Is fruit == 'apple'? I predict True.");
+console.log(fruit == 'apple');
 
-//Test 1
-console.log("Is car == 'bugatti'? I predict True.");
-console.log(car == 'bugatti');
+console.log("Is fruit != 'banana'? I predict True.");
+console.log(fruit != 'banana');
 
-//Test 2
-console.log("Is car != 'honda'? I predict True.");
-console.log(car != 'honda');
+//Tests using the lower case function:
+let word = 'HELLO';
+console.log("Is word.toLowerCase() == 'hello'? I predict True.");
+console.log(word.toLowerCase() == 'hello');
 
-//Test 3
-console.log("Is car === 'bugatti'? I predict True.");
-console.log(car === 'bugatti');
+//Numerical tests:
+let x = 10;
+let y = 20;
+console.log("Is x > y? I predict False.");
+console.log(x > y);
 
-//Test 4
-console.log("Is car < 'toyota'? I predict True.");
-console.log(car < 'toyota');
+console.log("Is x <= y? I predict True.");
+console.log(x <= y);
 
-//Test 5
-console.log("Is car <= 'bugatti'? I predict True.");
-console.log(car <= 'bugatti');
+//Tests using "and" and "or" operators:
+let age = 25;
+let isStudent = true;
 
-//Test 6
-console.log("Is car == 'honda'? I predict False.");
-console.log(car == 'honda');
+console.log("Is age >= 18 && isStudent true? I predict True.");
+console.log(age >= 18 && isStudent);
 
-//Test 7
-console.log("Is car == 'Bugatti'? I predict False.");
-console.log(car == 'Bugatti');
+console.log("Is age < 18 || isStudent false? I predict False.");
+console.log(age < 18 || !isStudent);
 
-//Test 8
-console.log("Is car == undefined? I predict False.")
-console.log(car == undefined);
+//Testing whether an item is in an array:
+let colors: string[]= ['green', 'red', 'blue'];
+console.log("Is 'green' is in colors array? I predict True.");
+console.log(colors.includes('green'));
 
-//Test 9
-console.log("Is car !== 'bugatti'? I predict False.");
-console.log(car !== 'bugatti');
-
-//Test 10
-console.log("Is car >= 'ford'? I predict False.");
-console.log(car >= 'ford');
+//Testing whether an item is not in an array:
+console.log("Is 'yellow' is not in colors array? I predict True.");
+console.log(!colors.includes('yellow'));
 
