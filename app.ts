@@ -1,10 +1,16 @@
-function make_Sandwich(...items: string[]) {
-    console.log("Making a sandwich with the following items:");
-    for (let item of items) {
-        console.log("-" + item);
+function carInfo(manufacturer: string, modelName: string, ...options: [string, any][]): object {
+    let car: {[key:string]: any} = {
+        manufacturer: manufacturer,
+        modelName: modelName
+    };
+    
+    for (let option of options) {
+        let [key, value] = option;
+        car[key] = value;
     }
+    
+    return car;
 }
 
-make_Sandwich("bread", "cheese", "chicken", "tomato", "lettuce");
-make_Sandwich("bread", "hummus", "cucumber", "lettuce");
-make_Sandwich("bread", "chocolate spread", "sliced almond");
+let myCar = carInfo("Toyota", "Camry", ["color", "blue"], ["year", "2022"]);
+console.log(myCar);
